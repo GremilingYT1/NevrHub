@@ -293,7 +293,7 @@ UIGradient_9.Parent = Filler_2
 
 -- Scripts:
 
-local function BOVITP_fake_script() -- Continue_Free.ButtonFunctionality 
+local function CPQPGB_fake_script() -- Continue_Free.ButtonFunctionality 
 	local script = Instance.new('LocalScript', Continue_Free)
 
 	-- Variables
@@ -311,8 +311,8 @@ local function BOVITP_fake_script() -- Continue_Free.ButtonFunctionality
 		HubFrame.Visible = true
 	end)
 end
-coroutine.wrap(BOVITP_fake_script)()
-local function ENBX_fake_script() -- Continue_Ads.ButtonFunctionality 
+coroutine.wrap(CPQPGB_fake_script)()
+local function NFMIP_fake_script() -- Continue_Ads.ButtonFunctionality 
 	local script = Instance.new('LocalScript', Continue_Ads)
 
 	-- Variables
@@ -320,18 +320,20 @@ local function ENBX_fake_script() -- Continue_Ads.ButtonFunctionality
 	local Button = script.Parent
 	local StarterScreenFrame = script.Parent
 	local HubFrame = script.Parent.Parent.Parent.MainFrame
+	local somethingTocopy = "www.google.com"
 	
 	-- Code
 	
 	HubFrame.Visible = false
 	
 	Button.MouseButton1Click:Connect(function()
+		setclipboard(somethingTocopy)
 		StarterScreenFrame.Visible = false
 		HubFrame.Visible = true
 	end)
 end
-coroutine.wrap(ENBX_fake_script)()
-local function IFIKNKS_fake_script() -- CloseButton.CloseFunction 
+coroutine.wrap(NFMIP_fake_script)()
+local function CCUJM_fake_script() -- CloseButton.CloseFunction 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	-- Variables
@@ -347,4 +349,4 @@ local function IFIKNKS_fake_script() -- CloseButton.CloseFunction
 		Frametop.Visible = false
 	end)
 end
-coroutine.wrap(IFIKNKS_fake_script)()
+coroutine.wrap(CCUJM_fake_script)()
