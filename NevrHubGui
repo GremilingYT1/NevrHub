@@ -1,0 +1,350 @@
+-- Instances:
+
+local NevrHub = Instance.new("ScreenGui")
+local StarterScreenInfo = Instance.new("Frame")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UICorner = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UIGradient = Instance.new("UIGradient")
+local Desc = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local Continue_Free = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local Continue_Ads = Instance.new("TextButton")
+local Title_3 = Instance.new("TextLabel")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local UIGradient_4 = Instance.new("UIGradient")
+local MainFrame = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local UIGradient_5 = Instance.new("UIGradient")
+local Title_4 = Instance.new("TextLabel")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local UIGradient_6 = Instance.new("UIGradient")
+local Filler = Instance.new("Frame")
+local UIGradient_7 = Instance.new("UIGradient")
+local UICorner_4 = Instance.new("UICorner")
+local CloseButton = Instance.new("TextButton")
+local ContentHolder = Instance.new("Frame")
+local UIGradient_8 = Instance.new("UIGradient")
+local UICorner_5 = Instance.new("UICorner")
+local Filler_2 = Instance.new("Frame")
+local UIGradient_9 = Instance.new("UIGradient")
+
+--Properties:
+
+NevrHub.Name = "NevrHub"
+NevrHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+NevrHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+StarterScreenInfo.Name = "StarterScreenInfo"
+StarterScreenInfo.Parent = NevrHub
+StarterScreenInfo.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+StarterScreenInfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StarterScreenInfo.BorderSizePixel = 0
+StarterScreenInfo.Position = UDim2.new(0.278152376, 0, 0.341618478, 0)
+StarterScreenInfo.Size = UDim2.new(0.463924527, 0, 0.316763043, 0)
+
+UIAspectRatioConstraint.Parent = StarterScreenInfo
+UIAspectRatioConstraint.AspectRatio = 2.400
+
+UICorner.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner.Parent = StarterScreenInfo
+
+Title.Name = "Title"
+Title.Parent = StarterScreenInfo
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(79, 79, 79)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.210091412, 0, 0.0438413322, 0)
+Title.Size = UDim2.new(0.578512371, 0, 0.251565844, 0)
+Title.Font = Enum.Font.Unknown
+Title.Text = "NevrHub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UITextSizeConstraint.Parent = Title
+UITextSizeConstraint.MaxTextSize = 80
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.47, Color3.fromRGB(127, 44, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(81, 214, 255))}
+UIGradient.Parent = Title
+
+Desc.Name = "Desc"
+Desc.Parent = StarterScreenInfo
+Desc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc.BackgroundTransparency = 1.000
+Desc.BorderColor3 = Color3.fromRGB(79, 79, 79)
+Desc.BorderSizePixel = 0
+Desc.Position = UDim2.new(0.0117443157, 0, 0.29436323, 0)
+Desc.Size = UDim2.new(0.97129184, 0, 0.395615935, 0)
+Desc.Font = Enum.Font.Unknown
+Desc.Text = "Thank you for using NevrHub, a free hub that will probably not go paid or have a seperate section for people who want to support me!"
+Desc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc.TextScaled = true
+Desc.TextSize = 14.000
+Desc.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = Desc
+UITextSizeConstraint_2.MaxTextSize = 80
+
+Continue_Free.Name = "Continue_Free"
+Continue_Free.Parent = StarterScreenInfo
+Continue_Free.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Continue_Free.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Continue_Free.BorderSizePixel = 0
+Continue_Free.Position = UDim2.new(0.0691604987, 0, 0.723381937, 0)
+Continue_Free.Size = UDim2.new(0.390604645, 0, 0.21085605, 0)
+Continue_Free.AutoButtonColor = false
+Continue_Free.Font = Enum.Font.Unknown
+Continue_Free.Text = ""
+Continue_Free.TextColor3 = Color3.fromRGB(255, 255, 255)
+Continue_Free.TextScaled = true
+Continue_Free.TextSize = 14.000
+Continue_Free.TextWrapped = true
+
+Title_2.Name = "Title"
+Title_2.Parent = Continue_Free
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(79, 79, 79)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.0764612034, 0, 0.0735439956, 0)
+Title_2.Size = UDim2.new(0.846259117, 0, 1.20792067, 0)
+Title_2.Font = Enum.Font.Unknown
+Title_2.Text = "Continue (Free)"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = Title_2
+UITextSizeConstraint_3.MaxTextSize = 66
+
+UIAspectRatioConstraint_2.Parent = Title_2
+UIAspectRatioConstraint_2.AspectRatio = 4.446
+
+UICorner_2.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_2.Parent = Continue_Free
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(127, 45, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(81, 214, 255))}
+UIGradient_2.Parent = Continue_Free
+
+UIAspectRatioConstraint_3.Parent = Continue_Free
+UIAspectRatioConstraint_3.AspectRatio = 4.446
+
+Continue_Ads.Name = "Continue_Ads"
+Continue_Ads.Parent = StarterScreenInfo
+Continue_Ads.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Continue_Ads.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Continue_Ads.BorderSizePixel = 0
+Continue_Ads.Position = UDim2.new(0.538929999, 0, 0.720250428, 0)
+Continue_Ads.Size = UDim2.new(0.390604645, 0, 0.21085605, 0)
+Continue_Ads.AutoButtonColor = false
+Continue_Ads.Font = Enum.Font.Unknown
+Continue_Ads.Text = ""
+Continue_Ads.TextColor3 = Color3.fromRGB(255, 255, 255)
+Continue_Ads.TextScaled = true
+Continue_Ads.TextSize = 14.000
+Continue_Ads.TextWrapped = true
+
+Title_3.Name = "Title"
+Title_3.Parent = Continue_Ads
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderColor3 = Color3.fromRGB(79, 79, 79)
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(0.0764612034, 0, 0.0735439956, 0)
+Title_3.Size = UDim2.new(0.846259117, 0, 1.20792067, 0)
+Title_3.Font = Enum.Font.Unknown
+Title_3.Text = "Continue (Ads)"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = Title_3
+UITextSizeConstraint_4.MaxTextSize = 66
+
+UIAspectRatioConstraint_4.Parent = Title_3
+UIAspectRatioConstraint_4.AspectRatio = 4.446
+
+UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_3.Parent = Continue_Ads
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(127, 45, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(81, 214, 255))}
+UIGradient_3.Parent = Continue_Ads
+
+UIAspectRatioConstraint_5.Parent = Continue_Ads
+UIAspectRatioConstraint_5.AspectRatio = 4.446
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(127, 45, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(81, 214, 255))}
+UIGradient_4.Parent = StarterScreenInfo
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = NevrHub
+MainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.194706678, 0, 0.208959535, 0)
+MainFrame.Size = UDim2.new(0.610361159, 0, 0.581213892, 0)
+
+TopBar.Name = "TopBar"
+TopBar.Parent = MainFrame
+TopBar.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(1, 0, 0.0855296403, 0)
+TopBar.ZIndex = 2
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(127, 45, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(81, 214, 255))}
+UIGradient_5.Parent = TopBar
+
+Title_4.Name = "Title"
+Title_4.Parent = TopBar
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.BorderColor3 = Color3.fromRGB(79, 79, 79)
+Title_4.BorderSizePixel = 0
+Title_4.Position = UDim2.new(0.00543273659, 0, 0.131050467, 0)
+Title_4.Size = UDim2.new(0.16090925, 0, 0.722496092, 0)
+Title_4.ZIndex = 3
+Title_4.Font = Enum.Font.Unknown
+Title_4.Text = "NevrHub"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+
+UITextSizeConstraint_5.Parent = Title_4
+UITextSizeConstraint_5.MaxTextSize = 80
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.47, Color3.fromRGB(127, 44, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(81, 214, 255))}
+UIGradient_6.Parent = Title_4
+
+Filler.Name = "Filler"
+Filler.Parent = TopBar
+Filler.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Filler.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Filler.BorderSizePixel = 0
+Filler.Position = UDim2.new(0, 0, 0.732559204, 0)
+Filler.Size = UDim2.new(1, 0, 0.267442405, 0)
+Filler.ZIndex = 2
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(127, 45, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(81, 214, 255))}
+UIGradient_7.Parent = Filler
+
+UICorner_4.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_4.Parent = TopBar
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = TopBar
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0.955350041, 0, 0.122093998, 0)
+CloseButton.Size = UDim2.new(0.0355355814, 0, 0.732558668, 0)
+CloseButton.ZIndex = 2
+CloseButton.AutoButtonColor = false
+CloseButton.Font = Enum.Font.SourceSansBold
+CloseButton.Text = "X"
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14.000
+CloseButton.TextWrapped = true
+
+ContentHolder.Name = "ContentHolder"
+ContentHolder.Parent = MainFrame
+ContentHolder.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ContentHolder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ContentHolder.BorderSizePixel = 0
+ContentHolder.Position = UDim2.new(0, 0, 0.0855296403, 0)
+ContentHolder.Size = UDim2.new(1, 0, 0.914470375, 0)
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(127, 45, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(81, 214, 255))}
+UIGradient_8.Parent = ContentHolder
+
+UICorner_5.CornerRadius = UDim.new(0.0299999993, 0)
+UICorner_5.Parent = ContentHolder
+
+Filler_2.Name = "Filler"
+Filler_2.Parent = ContentHolder
+Filler_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Filler_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Filler_2.BorderSizePixel = 0
+Filler_2.Position = UDim2.new(0, 0, -0.00153533788, 0)
+Filler_2.Size = UDim2.new(1, 0, 0.267442405, 0)
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(127, 45, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(81, 214, 255))}
+UIGradient_9.Parent = Filler_2
+
+-- Scripts:
+
+local function BOVITP_fake_script() -- Continue_Free.ButtonFunctionality 
+	local script = Instance.new('LocalScript', Continue_Free)
+
+	-- Variables
+	
+	local Button = script.Parent
+	local StarterScreenFrame = script.Parent
+	local HubFrame = script.Parent.Parent.Parent.MainFrame
+	
+	-- Code
+	
+	HubFrame.Visible = false
+	
+	Button.MouseButton1Click:Connect(function()
+		StarterScreenFrame.Visible = false
+		HubFrame.Visible = true
+	end)
+end
+coroutine.wrap(BOVITP_fake_script)()
+local function ENBX_fake_script() -- Continue_Ads.ButtonFunctionality 
+	local script = Instance.new('LocalScript', Continue_Ads)
+
+	-- Variables
+	
+	local Button = script.Parent
+	local StarterScreenFrame = script.Parent
+	local HubFrame = script.Parent.Parent.Parent.MainFrame
+	
+	-- Code
+	
+	HubFrame.Visible = false
+	
+	Button.MouseButton1Click:Connect(function()
+		StarterScreenFrame.Visible = false
+		HubFrame.Visible = true
+	end)
+end
+coroutine.wrap(ENBX_fake_script)()
+local function IFIKNKS_fake_script() -- CloseButton.CloseFunction 
+	local script = Instance.new('LocalScript', CloseButton)
+
+	-- Variables
+	
+	local Button = script.Parent
+	local Frame = script.Parent.Parent.Parent.ContentHolder
+	local Frametop = script.Parent.Parent.Parent.TopBar
+	
+	-- Code
+	
+	Button.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+		Frametop.Visible = false
+	end)
+end
+coroutine.wrap(IFIKNKS_fake_script)()
