@@ -1,5 +1,3 @@
--- Instances:
-
 local NevrHub = Instance.new("ScreenGui")
 local StarterScreenInfo = Instance.new("Frame")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
@@ -293,13 +291,13 @@ UIGradient_9.Parent = Filler_2
 
 -- Scripts:
 
-local function CPQPGB_fake_script() -- Continue_Free.ButtonFunctionality 
+local function TEYR_fake_script() -- Continue_Free.ButtonFunctionality 
 	local script = Instance.new('LocalScript', Continue_Free)
 
 	-- Variables
 	
 	local Button = script.Parent
-	local StarterScreenFrame = script.Parent
+	local StarterScreenFrame = script.Parent.Parent.Parent.StarterScreenInfo
 	local HubFrame = script.Parent.Parent.Parent.MainFrame
 	
 	-- Code
@@ -311,14 +309,14 @@ local function CPQPGB_fake_script() -- Continue_Free.ButtonFunctionality
 		HubFrame.Visible = true
 	end)
 end
-coroutine.wrap(CPQPGB_fake_script)()
-local function NFMIP_fake_script() -- Continue_Ads.ButtonFunctionality 
+coroutine.wrap(TEYR_fake_script)()
+local function FRBGWBB_fake_script() -- Continue_Ads.ButtonFunctionality 
 	local script = Instance.new('LocalScript', Continue_Ads)
 
 	-- Variables
 	
 	local Button = script.Parent
-	local StarterScreenFrame = script.Parent
+	local StarterScreenFrame = script.Parent.Parent.Parent.StarterScreenInfo
 	local HubFrame = script.Parent.Parent.Parent.MainFrame
 	local somethingTocopy = "www.google.com"
 	
@@ -332,8 +330,8 @@ local function NFMIP_fake_script() -- Continue_Ads.ButtonFunctionality
 		HubFrame.Visible = true
 	end)
 end
-coroutine.wrap(NFMIP_fake_script)()
-local function CCUJM_fake_script() -- CloseButton.CloseFunction 
+coroutine.wrap(FRBGWBB_fake_script)()
+local function QHUOPOZ_fake_script() -- CloseButton.CloseFunction 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	-- Variables
@@ -349,4 +347,59 @@ local function CCUJM_fake_script() -- CloseButton.CloseFunction
 		Frametop.Visible = false
 	end)
 end
-coroutine.wrap(CCUJM_fake_script)()
+coroutine.wrap(QHUOPOZ_fake_script)()
+local function WTNYJQT_fake_script() -- MainFrame.DragFrame 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	-- LocalScript in the Frame
+	local UIS = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	local frame = script.Parent
+	
+	local dragging = false
+	local dragInput, mouseStart, frameStart
+	local dragSpeed = 0.15  -- Duration of the easing in seconds
+	local easingStyle = Enum.EasingStyle.Quad
+	local easingDirection = Enum.EasingDirection.Out
+	
+	local function updatePosition(input)
+		local delta = input.Position - mouseStart
+		local newPosition = UDim2.new(
+			frameStart.X.Scale,
+			frameStart.X.Offset + delta.X,
+			frameStart.Y.Scale,
+			frameStart.Y.Offset + delta.Y
+		)
+		local tweenInfo = TweenInfo.new(dragSpeed, easingStyle, easingDirection)
+		local tween = TweenService:Create(frame, tweenInfo, {Position = newPosition})
+		tween:Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			mouseStart = input.Position
+			frameStart = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			updatePosition(input)
+		end
+	end)
+	
+end
+coroutine.wrap(WTNYJQT_fake_script)()
