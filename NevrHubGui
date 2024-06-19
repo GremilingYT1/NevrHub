@@ -1,3 +1,5 @@
+-- Instances:
+
 local NevrHub = Instance.new("ScreenGui")
 local StarterScreenInfo = Instance.new("Frame")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
@@ -37,6 +39,16 @@ local UIGradient_8 = Instance.new("UIGradient")
 local UICorner_5 = Instance.new("UICorner")
 local Filler_2 = Instance.new("Frame")
 local UIGradient_9 = Instance.new("UIGradient")
+local ButtonHolder = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local CW = Instance.new("TextButton")
+local UIGradient_10 = Instance.new("UIGradient")
+local Title_5 = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local FrameHolder = Instance.new("Frame")
+local Button1 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
@@ -289,9 +301,88 @@ Filler_2.Size = UDim2.new(1, 0, 0.267442405, 0)
 UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(127, 45, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(81, 214, 255))}
 UIGradient_9.Parent = Filler_2
 
+ButtonHolder.Name = "ButtonHolder"
+ButtonHolder.Parent = ContentHolder
+ButtonHolder.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ButtonHolder.BackgroundTransparency = 0.600
+ButtonHolder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ButtonHolder.BorderSizePixel = 0
+ButtonHolder.Position = UDim2.new(0, 0, 1.17981209e-07, 0)
+ButtonHolder.Size = UDim2.new(0.209536895, 0, 0.999999762, 0)
+
+UICorner_6.CornerRadius = UDim.new(0.0599999987, 0)
+UICorner_6.Parent = ButtonHolder
+
+CW.Name = "CW"
+CW.Parent = ButtonHolder
+CW.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CW.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CW.BorderSizePixel = 0
+CW.Position = UDim2.new(0.0395432822, 0, 0.0463921092, 0)
+CW.Size = UDim2.new(0.916959107, 0, 0.108884886, 0)
+CW.AutoButtonColor = false
+CW.Font = Enum.Font.Unknown
+CW.Text = ""
+CW.TextColor3 = Color3.fromRGB(255, 255, 255)
+CW.TextScaled = true
+CW.TextSize = 14.000
+CW.TextWrapped = true
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(127, 45, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(81, 214, 255))}
+UIGradient_10.Parent = CW
+
+Title_5.Name = "Title"
+Title_5.Parent = CW
+Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.BackgroundTransparency = 1.000
+Title_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_5.BorderSizePixel = 0
+Title_5.Position = UDim2.new(0.0344994962, 0, 0.106516413, 0)
+Title_5.Size = UDim2.new(0.926688552, 0, 0.786967158, 0)
+Title_5.Font = Enum.Font.Unknown
+Title_5.Text = "Combat Warriors"
+Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.TextScaled = true
+Title_5.TextSize = 14.000
+Title_5.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_7.Parent = CW
+
+FrameHolder.Name = "FrameHolder"
+FrameHolder.Parent = ContentHolder
+FrameHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameHolder.BackgroundTransparency = 1.000
+FrameHolder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameHolder.BorderSizePixel = 0
+FrameHolder.Position = UDim2.new(0.208801568, 0, 0.00386600825, 0)
+FrameHolder.Size = UDim2.new(0.791198432, 0, 0.996133864, 0)
+
+Button1.Name = "Button-1"
+Button1.Parent = FrameHolder
+Button1.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Button1.BackgroundTransparency = 0.400
+Button1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button1.BorderSizePixel = 0
+Button1.Position = UDim2.new(0.0438259803, 0, 0.0539295897, 0)
+Button1.Size = UDim2.new(0.86611104, 0, 0.114786685, 0)
+Button1.AutoButtonColor = false
+Button1.Font = Enum.Font.Ubuntu
+Button1.Text = "Hitbox Extender - Bow & Kunai (PC & Android)"
+Button1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button1.TextScaled = true
+Button1.TextSize = 14.000
+Button1.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_8.Parent = Button1
+
+UITextSizeConstraint_6.Parent = Button1
+UITextSizeConstraint_6.MaxTextSize = 42
+
 -- Scripts:
 
-local function TEYR_fake_script() -- Continue_Free.ButtonFunctionality 
+local function YLVHHH_fake_script() -- Continue_Free.ButtonFunctionality 
 	local script = Instance.new('LocalScript', Continue_Free)
 
 	-- Variables
@@ -309,8 +400,8 @@ local function TEYR_fake_script() -- Continue_Free.ButtonFunctionality
 		HubFrame.Visible = true
 	end)
 end
-coroutine.wrap(TEYR_fake_script)()
-local function FRBGWBB_fake_script() -- Continue_Ads.ButtonFunctionality 
+coroutine.wrap(YLVHHH_fake_script)()
+local function FRYZH_fake_script() -- Continue_Ads.ButtonFunctionality 
 	local script = Instance.new('LocalScript', Continue_Ads)
 
 	-- Variables
@@ -330,8 +421,8 @@ local function FRBGWBB_fake_script() -- Continue_Ads.ButtonFunctionality
 		HubFrame.Visible = true
 	end)
 end
-coroutine.wrap(FRBGWBB_fake_script)()
-local function QHUOPOZ_fake_script() -- CloseButton.CloseFunction 
+coroutine.wrap(FRYZH_fake_script)()
+local function NNZU_fake_script() -- CloseButton.CloseFunction 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	-- Variables
@@ -347,8 +438,22 @@ local function QHUOPOZ_fake_script() -- CloseButton.CloseFunction
 		Frametop.Visible = false
 	end)
 end
-coroutine.wrap(QHUOPOZ_fake_script)()
-local function WTNYJQT_fake_script() -- MainFrame.DragFrame 
+coroutine.wrap(NNZU_fake_script)()
+local function PJTX_fake_script() -- Button1.Script 
+	local script = Instance.new('LocalScript', Button1)
+
+	-- Variables
+	
+	local Button = script.Parent
+	
+	-- Code
+	
+	Button.MouseButton1Click:Connect(function()
+		_G.HeadSize = 10 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.Head.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.Head.Transparency = 1 v.Character.Head.BrickColor = BrickColor.new("Red") v.Character.Head.Material = "Neon" v.Character.Head.CanCollide = false v.Character.Head.Massless = true end) end end end end)
+	end)
+end
+coroutine.wrap(PJTX_fake_script)()
+local function JQYJ_fake_script() -- MainFrame.DragFrame 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	-- LocalScript in the Frame
@@ -402,4 +507,4 @@ local function WTNYJQT_fake_script() -- MainFrame.DragFrame
 	end)
 	
 end
-coroutine.wrap(WTNYJQT_fake_script)()
+coroutine.wrap(JQYJ_fake_script)()
