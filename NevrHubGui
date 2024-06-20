@@ -49,6 +49,7 @@ local FrameHolder = Instance.new("Frame")
 local Button1 = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
 
 --Properties:
 
@@ -58,10 +59,11 @@ NevrHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 StarterScreenInfo.Name = "StarterScreenInfo"
 StarterScreenInfo.Parent = NevrHub
+StarterScreenInfo.AnchorPoint = Vector2.new(0.5, 0.5)
 StarterScreenInfo.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 StarterScreenInfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 StarterScreenInfo.BorderSizePixel = 0
-StarterScreenInfo.Position = UDim2.new(0.278152376, 0, 0.341618478, 0)
+StarterScreenInfo.Position = UDim2.new(0.464261621, 0, 0.521413028, 0)
 StarterScreenInfo.Size = UDim2.new(0.463924527, 0, 0.316763043, 0)
 
 UIAspectRatioConstraint.Parent = StarterScreenInfo
@@ -204,11 +206,12 @@ UIGradient_4.Parent = StarterScreenInfo
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = NevrHub
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 MainFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 MainFrame.BackgroundTransparency = 1.000
 MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.194706678, 0, 0.208959535, 0)
+MainFrame.Position = UDim2.new(0.464767367, 0, 0.496630758, 0)
 MainFrame.Size = UDim2.new(0.610361159, 0, 0.581213892, 0)
 
 TopBar.Name = "TopBar"
@@ -380,9 +383,12 @@ UICorner_8.Parent = Button1
 UITextSizeConstraint_6.Parent = Button1
 UITextSizeConstraint_6.MaxTextSize = 42
 
+UIAspectRatioConstraint_6.Parent = MainFrame
+UIAspectRatioConstraint_6.AspectRatio = 2.133
+
 -- Scripts:
 
-local function YLVHHH_fake_script() -- Continue_Free.ButtonFunctionality 
+local function SQWB_fake_script() -- Continue_Free.ButtonFunctionality 
 	local script = Instance.new('LocalScript', Continue_Free)
 
 	-- Variables
@@ -396,12 +402,15 @@ local function YLVHHH_fake_script() -- Continue_Free.ButtonFunctionality
 	HubFrame.Visible = false
 	
 	Button.MouseButton1Click:Connect(function()
+		StarterScreenFrame:TweenSize(UDim2.new(0,0,0,0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, true)
+		wait(1)
 		StarterScreenFrame.Visible = false
 		HubFrame.Visible = true
+		HubFrame:TweenSize(UDim2.new(0.61, 0,0.581, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, true)
 	end)
 end
-coroutine.wrap(YLVHHH_fake_script)()
-local function FRYZH_fake_script() -- Continue_Ads.ButtonFunctionality 
+coroutine.wrap(SQWB_fake_script)()
+local function MWISAZ_fake_script() -- Continue_Ads.ButtonFunctionality 
 	local script = Instance.new('LocalScript', Continue_Ads)
 
 	-- Variables
@@ -417,29 +426,45 @@ local function FRYZH_fake_script() -- Continue_Ads.ButtonFunctionality
 	
 	Button.MouseButton1Click:Connect(function()
 		setclipboard(somethingTocopy)
+		StarterScreenFrame:TweenSize(UDim2.new(0,0,0,0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, true)
+		wait(1)
 		StarterScreenFrame.Visible = false
 		HubFrame.Visible = true
+		HubFrame:TweenSize(UDim2.new(0.61, 0,0.581, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, true)
 	end)
 end
-coroutine.wrap(FRYZH_fake_script)()
-local function NNZU_fake_script() -- CloseButton.CloseFunction 
+coroutine.wrap(MWISAZ_fake_script)()
+local function URKPYNO_fake_script() -- StarterScreenInfo.ZoomIn 
+	local script = Instance.new('LocalScript', StarterScreenInfo)
+
+	-- Variables
+	
+	local Frame = script.Parent
+	
+	-- Code
+	
+	Frame.Size = UDim2.new(0,0,0,0)
+	wait(1)
+	Frame:TweenSize(UDim2.new(0.464, 0,0.317, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, true)
+end
+coroutine.wrap(URKPYNO_fake_script)()
+local function ZHYUDDW_fake_script() -- CloseButton.CloseFunction 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	-- Variables
 	
 	local Button = script.Parent
-	local Frame = script.Parent.Parent.Parent.ContentHolder
-	local Frametop = script.Parent.Parent.Parent.TopBar
-	
+	local Frame = script.Parent.Parent.Parent.Parent.MainFrame
 	-- Code
 	
 	Button.MouseButton1Click:Connect(function()
+		Frame:TweenSize(UDim2.new(0,0,0,0), Enum.EasingDirection.InOut, Enum.EasingStyle.Quad, 1, true)
+		wait(1)
 		Frame.Visible = false
-		Frametop.Visible = false
 	end)
 end
-coroutine.wrap(NNZU_fake_script)()
-local function PJTX_fake_script() -- Button1.Script 
+coroutine.wrap(ZHYUDDW_fake_script)()
+local function STQE_fake_script() -- Button1.Script 
 	local script = Instance.new('LocalScript', Button1)
 
 	-- Variables
@@ -452,14 +477,17 @@ local function PJTX_fake_script() -- Button1.Script
 		_G.HeadSize = 10 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.Head.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.Head.Transparency = 1 v.Character.Head.BrickColor = BrickColor.new("Red") v.Character.Head.Material = "Neon" v.Character.Head.CanCollide = false v.Character.Head.Massless = true end) end end end end)
 	end)
 end
-coroutine.wrap(PJTX_fake_script)()
-local function JQYJ_fake_script() -- MainFrame.DragFrame 
+coroutine.wrap(STQE_fake_script)()
+local function VKEZPKU_fake_script() -- MainFrame.DragFrame 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	-- LocalScript in the Frame
+	
 	local UIS = game:GetService("UserInputService")
 	local TweenService = game:GetService("TweenService")
 	local frame = script.Parent
+	
+	frame.Size = UDim2.new(0,0,0,0)
 	
 	local dragging = false
 	local dragInput, mouseStart, frameStart
@@ -507,4 +535,4 @@ local function JQYJ_fake_script() -- MainFrame.DragFrame
 	end)
 	
 end
-coroutine.wrap(JQYJ_fake_script)()
+coroutine.wrap(VKEZPKU_fake_script)()
